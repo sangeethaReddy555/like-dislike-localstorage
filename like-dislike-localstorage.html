@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="localstorage.js" defer></script>
+    
+</head>
+<body class="mt-4">
+    <section class="m-auto">
+        <div class="row">
+            <div class="col-md-3 m-auto">
+                <div class="card container">
+                <div class="card-header">
+                    <img src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg" class="rounded mx-auto d-block w-75" alt="...">
+                </div>
+                <div class="card-body">
+                    <h1 class="text-center">Sangeetha</h1>
+                    <p class="text-center">"MCA student | Mern Stack 💻" <br>"Future software devlop 👩‍💻 | Coffee lover ☕" <br>"Learning, growing, and glowing ✨"</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <div>
+                        <h3 id="like">0</h3>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="add()">Like<i class="bi bi-hand-thumbs-up-fill"></i></button>
+                        </div>
+                        <div>
+                        <h3 id="dis">0</h3>
+                        <button class="btn btn-warning btn-sm" onclick="sub()">Dislike<i class="bi bi-hand-thumbs-down-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-footer text-center">
+                    <h3>Total :- <span id="span">0</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+            </div>
+    </section>
+</body>
+</html>
